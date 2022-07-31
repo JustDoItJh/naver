@@ -48,8 +48,14 @@ body {
 .footer .notice-area .link-all::after,
 .sc-news .group-issue .link-media::after,
 .sc-news .group-title .btn-set::before,
+.sc-news .group-title .link-title::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-content .ic-prev,
 .sc-dashboard .navi a::before,
 .sc-themepost .group-title .info-area .btn-set::before,
+.sc-login .link-login .ic-naver,
+.sc-login .link-area .link-id::before,
+.sc-login .link-area .link-join::before,
 .group-theme .ic-prev, .ic-play, .ic-more, .btn-theme,
 .go-top::before {
     background-image: url(../images/sp-bg.png);
