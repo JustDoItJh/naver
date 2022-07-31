@@ -1,0 +1,75 @@
+body {
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    min-width: 1190px;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+/* 누구나 쓸수있는 공통클래스 세팅 용도 */
+
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip:  rect(0 0 0 0);
+}
+
+/* thumb-bd */
+
+.thumb-bd{
+    position: relative;
+    display: block;
+}
+.thumb-bd::after{
+    position: absolute;
+    content: '';
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 1px solid #000;
+    opacity: 0.1;
+}
+.thumb-bd img{width: 100%;}
+
+/* sp-bg 창고 */
+.header .logo::before, 
+.header .search-area .btn-search::after,
+.header .service-area .link-start::after,
+.header .service-area .ic-junior,
+.header .service-area .ic-happybin,
+.header .search-area .ic-keyboard,
+.header .search-area .ic-arrow,
+.header .gnb-list .ic-mail,
+.header .gnb-list .ic-tv,
+.header .gnb-list .shop::before,
+.header .gnb-list .shoplive::before,
+.header .gnb-area .btn-more::after,
+.header .weather-item .state::before,
+.footer .notice-area .link-all::after,
+.sc-news .group-issue .link-media::after,
+.sc-news .group-title .btn-set::before,
+.sc-dashboard .navi a::before,
+.sc-themepost .group-title .info-area .btn-set::before,
+.group-theme .ic-prev, .ic-play, .ic-more, .btn-theme,
+.go-top::before {
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px; 
+}
+
+/* sp-bg1 참고 */
+.sc-shopcast .shop-header .shop-trend .link-shop::before,
+.sc-shopcast .shop-header .shop-trend .link-shop::after,
+.sc-shopcast .shop-control .btn-prev::before,
+.sc-shopcast .shop-control .btn-next::before,
+.sc-shopcast .shop-page .btn-prev::before,
+.sc-shopcast .shop-page .btn-next::before,
+.sc-shopcast .shop-control .btn-prev::before,
+.sc-shopcast .shop-control .btn-next::before,
+.sc-shopcast .group-plusdeal .link-logo::before,
+.sc-shopcast .group-plusdeal .thumb-box+.thumb-box::before,
+.ic-one-plus {
+    background-image: url(../images/sp-bg1.png);
+    background-repeat: no-repeat;
+    background-size: 107px 101px;
+}
